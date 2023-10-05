@@ -24,7 +24,7 @@ export class Tweet {
         tweetList.push(this)
     }
     reply(content:Tweet){
-        tweetList.forEach(tweet => { if (tweet === content) tweet.type = 'reply'; })
+        tweetList.forEach(tweet => { if (tweet === content) tweet.type = 'reply' })
         this.replies.push(`> @${content.user}: ${content.content}`)
     }
     like(user: User){
