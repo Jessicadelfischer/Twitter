@@ -19,8 +19,6 @@ Nesta camada:
  * Seguir outros usuários (mecanismo de followers).
  * Curtir tweets de outros usuários e/ou respondê-los com tweets do tipo “reply”.
 
- ![Diagrama de classes](/assets/Diagrama.png)
-
  # Features
 
 ### Feature cadastro de usuários
