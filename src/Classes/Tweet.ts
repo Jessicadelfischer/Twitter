@@ -41,7 +41,7 @@ export class Tweet {
         if (likes === 1) {
             userLikes = `[@${this.likes[0]} liked this]`
         }
-        console.log(`@${this.user}: ${this.content}\n${userLikes}\n ${replies}\n-----------------------------------------`)
+        console.log(`@${this.user}: ${this.content}\n${userLikes}\n${replies}\n-----------------------------------------`)
     }
         
     showReplies() {
