@@ -21,7 +21,6 @@ export class Tweet {
         this.user = user
         this.replies = []
         this.likes = []
-        tweetList.push(this)
     }
     reply(content:Tweet){
         tweetList.forEach(tweet => { if (tweet === content) tweet.type = 'reply' })
