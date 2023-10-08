@@ -24,9 +24,10 @@ export class User {
         userList.push(this)
     }
 
-    sendTweet(tweet: Tweet){
-        tweetList.push(tweet)    
-    }
+    sendTweet(tweet: string){
+        tweetList.push(new Tweet(tweet, this.username))
+    }    
+    
     follow(user: User){
         user !== this ?
             this.following.push(user) :       
@@ -40,8 +41,7 @@ export class User {
         feed.map(tweet => tweet.show()).join('\n')
     }
     showTweets(){
-        const usernames = this.following.map((user) => user.username)
-        const feed = tweetList.filter((tweet) => tweet.user === this.username && tweet.type !== "reply")
-        console.log(feed.map(tweet => tweet.show()).join('\n'))
+        const feed = tweetList.filter((tweet) => tweet.user === this.username)
+        feed.map(tweet => tweet.show()).join('\n')        
     }
 }

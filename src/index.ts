@@ -1,7 +1,5 @@
-import { send } from "process"
 import { Tweet } from "./Classes/Tweet"
 import { User } from "./Classes/User"
-import { Console } from "console"
 
 export const userList: User[] = []
 export const tweetList: Tweet[] = []
@@ -23,9 +21,6 @@ usuario3.follow(usuario)
 usuario4.follow(usuario)
 
 
-tweett.reply(tweet)
-tweett.reply(tweet2)
-tweet3.reply(tweett)
 tweett.like(usuario)
 tweett.like(usuario2)
 tweett.like(usuario3)
