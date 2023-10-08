@@ -25,7 +25,7 @@ export class User {
     }
 
     sendTweet(tweet: string){
-        tweetList.push(new Tweet(tweet, this.username))
+    new Tweet(tweet, this.username)
     }    
     
     follow(user: User){
